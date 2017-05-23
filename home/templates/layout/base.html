@@ -23,29 +23,27 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav>
-            <div>
-            {% block nav %}
-                {% include 'includes/nav.html' %}
-            {% endblock %}
-            </div>
-        </nav>
-        <!-- Header -->
-        <header>
-        {% block header %}
+        <header class="nav-container">
+        {% block nav %}
+            {% include 'includes/nav.html' %}
         {% endblock %}
         </header>
+        <!-- Header -->
+        <div>
+        {% block header %}
+        {% endblock %}
+        </div>
         <!-- Main Content -->
         <div>
         {% block content %}
         {% endblock %}
         </div>
         <!-- Footer -->
-        <footer>
+       <!--  <footer>
         {% block footer %}
             {% include 'includes/footer.html' %}
         {% endblock %}
-        </footer>
+        </footer> -->
 
         <!-- JavaScript -->
         {% block js %}

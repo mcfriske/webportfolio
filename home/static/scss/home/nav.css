@@ -2,28 +2,33 @@
 	width: 100%;
 	width: 100vw;
 	border-bottom: 1px solid #ccc;
+    display:none;
 }
 
 .nav {
-	padding: 2em;
+    overflow: hidden;
 }
 
-.nav-left .nav-menu {
-	float: left;
-}
-
-.nav-right .nav-menu {
-	float: right;
-}
-
-.nav-menu ul {
-	list-style: none;
-}
-
-.nav-title {
-
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
+.nav-title {}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
 }

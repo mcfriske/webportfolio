@@ -1,0 +1,42 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block head %}
+<link href="{% static 'grid.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+<div class="content">
+<div class="grid">
+    <div class="headline">
+        <h1>Headline</h1>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+    <div class="main">
+        <p>Quisque lobortis sem eu magna pulvinar commodo. Integer ac suscipit quam. Nam mattis nibh orci, dictum hendrerit est pellentesque sit amet.</p>
+    </div>
+    <div class="item">
+        <div class="top"></div>
+        <h2>One</h2>
+        <p class="middle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <a class="btn">More</a>
+    </div>
+    <div class="item">
+        <div class="top"></div>
+        <h2>Two</h2>
+        <p class="middle">Suspendisse tellus mauris, congue ultrices consequat ut, vestibulum id quam.</p>
+        <a class="btn">More</a>
+    </div>
+    <div class="item">
+        <div class="top"></div>
+        <h2>Three<br>Large Title</h2>
+        <p class="middle">Mauris pellentesque mollis nibh non porta. Aliquam et orci lectus.</p>
+        <a class="btn">More</a>
+    </div>
+    <div class="item">
+        <div class="top"></div>
+        <h2>Four</h2>
+        <p class="middle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <a class="btn">More</a>
+    </div>
+</div>
+</div>
+{% endblock %}
