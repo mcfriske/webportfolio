@@ -23,10 +23,32 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.5em;
+}
+small {
+    font-size: .7em;
+}
+
 .content {
     max-width: 1000px;
     margin: auto;
     padding: 2em 0;
+    overflow: hidden;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.grid > div {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .main {
@@ -63,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 10px solid #fff;
     text-align: center;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 .top {
@@ -114,39 +135,23 @@ h1, h2, h3, h4, h5, h6 {
         padding: 2em;
     }
 
-    .grid > div{
+    .grid > div {
         width: 47%;
         float: left;
-        margin-left: 3%;
-        margin-bottom: 3rem;
-    }
-
-    .headline {
-        min-height: 400px;
-    }
-
-    .odd {
-        margin-top: -17rem;
     }
 }
 
 /* Grid Settings and Resets */
 
 @supports (display: grid) {
-    .odd {
-        margin-top: auto;
-    }
+
     .grid > div {
         width: auto;
         margin: 0;
     }
 
     .main {
-        margin: 2rem 0 !important;
-    }
-
-    .item {
-        margin-bottom: 0;
+        margin: 2.5rem 0 !important;
     }
 
 }
