@@ -36,8 +36,9 @@ small {
 .content {
     max-width: 1000px;
     margin: auto;
+    margin-top: 3em;
     padding: 2em 0;
-    overflow: hidden;
+    font-size: 1em;
 }
 
 .grid {

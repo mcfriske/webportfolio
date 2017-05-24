@@ -3,4 +3,9 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'projects/grid.html')
+    return render(request, 'projects/index.html')
+
+def grid(request):
+    return render(request, 'projects/grid.html', {'project': 'Grid Tiles'})
+
+

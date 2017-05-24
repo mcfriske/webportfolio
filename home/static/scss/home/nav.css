@@ -1,29 +1,44 @@
 .nav-container {
 	width: 100%;
 	width: 100vw;
+    min-height: 50px;
+    color: #333;
+    background-color: #eee;
 	border-bottom: 1px solid #ccc;
-    display:none;
 }
 
-.nav {
-    overflow: hidden;
+.nav-collaspe {
+}
+
+.nav-fixed {
+    top: 0;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    padding: 1em;
 }
 
 .nav-item {
     float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+    padding-left: 1em;
+}
+
+.nav-title {
+    padding: 1em;
+    font-weight: bold;
+}
+.nav-container a {
+    color: #333;
     text-decoration: none;
 }
 
-.nav-title {}
+.nav-container a:hover,
+.nav-container a:focus {
+    color: #aaa;
+}
 
 .nav-left {
     float: left;

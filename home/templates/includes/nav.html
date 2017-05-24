@@ -1,9 +1,12 @@
-<div class="nav">
+<nav class="nav-fixed nav-container">
     <div class="nav-title nav-left">
-        <a>Web Portfolio</a>
+        <a href="/projects/">Web Portfolio</a>
+        {% if project %}
+        <span>: {{ project }}</span>
+        {% endif %}
     </div>
-
-    <div class="nav-right">
+<!--
+    <div class="nav-right nav-collaspe">
         <ul class="nav-menu">
             <li class="nav-item">
                 Item 1
@@ -16,4 +19,5 @@
             </li>
         </ul>
     </div>
-</div>
+-->
+</nav>
