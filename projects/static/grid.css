@@ -48,7 +48,6 @@ small {
 
 .grid > div {
     width: 100%;
-    margin-bottom: 2em;
 }
 
 .main {
@@ -130,6 +129,12 @@ small {
     background-color: #384941;
 }
 
+@media screen and (max-width: 48em) {
+    .grid > div {
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (min-width: 48em) {
     .content {
         padding: 2em;
@@ -139,6 +144,14 @@ small {
         width: 47%;
         float: left;
     }
+
+    .even, .headline {
+        margin-bottom: 2em;
+    }
+    .odd {
+        margin-top: -5rem;
+        margin-bottom: 7rem;
+    }
 }
 
 /* Grid Settings and Resets */
@@ -147,6 +160,10 @@ small {
 
     .grid > div {
         width: auto;
+        margin: 0;
+    }
+
+    .odd {
         margin: 0;
     }
 
