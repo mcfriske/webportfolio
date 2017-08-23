@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'projects',
+    'django_assets'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,13 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATIC_URL = '/static/'
+
+STATICFILES_FINDERS = (
+   "django.contrib.staticfiles.finders.FileSystemFinder",
+   "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+   "django_assets.finders.AssetsFinder"
+)
+
+ASSETS_MODULES = [
+    'assets'
+]

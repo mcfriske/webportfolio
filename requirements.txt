@@ -1,1 +1,5 @@
 Django
+django-assets
+cssmin
+jsmin
+webassets
