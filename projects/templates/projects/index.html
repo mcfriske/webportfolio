@@ -1,7 +1,28 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 {% block head %}
-<link href="{% static 'base.css' %}" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
+<link href="{% static 'css/projects/home.min.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block header %}
+<div class="hero">
+    <div class="hero-text">
+        <span>Portfolio</span>
+    </div>
+</div>
 {% endblock %}
 {% block content %}
+<div class="container-fluid gw">
+  <div class="card-user-profile g one-whole tablet-one-half desk-one-third">
+    <img class="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+    <div class="card-user-profile-content card-section">
+        <div class="card-user-profile-avatar">
+            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+        </div>
+        <p class="card-user-profile-name">Abominable Snowman</p>
+        <p class="card-user-profile-status">Yeti Web Designer</p>
+        <p class="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+    </div>
+  </div>
+</div>
 {% endblock %}

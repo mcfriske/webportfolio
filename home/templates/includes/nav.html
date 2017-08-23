@@ -1,8 +1,12 @@
-<nav class="nav-fixed nav-container">
-    <div class="nav-title nav-left">
-        <a href="/projects/">Web Portfolio</a>
+<nav class="nav nav-dark">
+    <div class="nav-left nav-logo">
+        <a href="/projects/"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="nav-title nav-center">
         {% if project %}
-        <span>: {{ project }}</span>
+        <span>{{ project }}</span>
+        {% else %}
+        <span>Web Portfolio</span>
         {% endif %}
     </div>
 <!--

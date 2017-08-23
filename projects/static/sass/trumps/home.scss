@@ -1,0 +1,35 @@
+@import '../tools/functions';
+@import '../settings/global';
+@import '../settings/colors';
+@import '../tools/mixins';
+
+body {
+    background: $gray-light;
+}
+
+.hero-text {
+    display: none;
+    @include media($from: tablet) {
+        display: block;
+        font-family: 'Cabin Sketch', cursive;
+        color: #7c7c7c;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 7rem;
+        position: absolute;
+        top: 30vh;
+        right: 200px;
+    }
+    @include media($from: desk) {
+        top: 26vh;
+        font-size: 10rem;
+    }
+}
+
+.hero {
+    @include media($from: tablet) {
+        background: url('../../img/projects/hero_banner.png') right no-repeat white;
+        background-size: contain;
+        height: 50vh;
+    }
+}
