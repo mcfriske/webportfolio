@@ -7,6 +7,12 @@ body {
     background: $gray-light;
 }
 
+.nav-logo {
+    i {
+        font-size: 2rem;
+    }
+}
+
 .hero-text {
     display: none;
     @include media($from: tablet) {
@@ -17,11 +23,11 @@ body {
         font-weight: bold;
         font-size: 7rem;
         position: absolute;
-        top: 30vh;
+        top: calc(30vh - 57px);
         right: 200px;
     }
     @include media($from: desk) {
-        top: 26vh;
+        top: calc(26vh - 57px);
         font-size: 10rem;
     }
 }
@@ -32,4 +38,32 @@ body {
         background-size: contain;
         height: 50vh;
     }
+}
+
+.btn {
+    margin: .5rem;
+
+    @include media($from: hand) {
+        margin: 0 .5rem;
+    }
+}
+
+.avatar-web-app {
+    background: $blue !important;
+}
+
+.avatar-layout {
+    background: #7359E0 !important;
+}
+
+.avatar-design {
+    background: $yellow !important;
+}
+
+.avatar-mobile {
+    background: $red !important;
+}
+
+.avatar-api {
+    background: #F75FA0 !important;
 }

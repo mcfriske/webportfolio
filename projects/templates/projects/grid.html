@@ -2,7 +2,10 @@
 {% load static %}
 {% block head %}
 {{ super }}
-<link href="{% static 'grid.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'css/projects/grid.min.css' %}">
+{% endblock %}
+{% block nav %}
+    {% include 'includes/nav-light.html' %}
 {% endblock %}
 {% block content %}
 <div class="content">
@@ -19,8 +22,7 @@
     </div>
     <div class="item even">
         <div class="top">
-            <img src="/static/img/f1.jpg"/>
-            <div class="triangle"></div>
+            <img src="/static/img/projects/grid-tiles/f1.jpg"/>
         </div>
         <h2>Title One</h2>
         <p class="middle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -28,8 +30,7 @@
     </div>
     <div class="item odd">
         <div class="top">
-            <img src="/static/img/f2.jpg"/>
-            <div class="triangle"></div>
+            <img src="/static/img/projects/grid-tiles/f2.jpg"/>
         </div>
         <h2>Title Two</h2>
         <p class="middle">Suspendisse tellus mauris, congue ultrices consequat ut, vestibulum id quam.</p>
@@ -37,8 +38,7 @@
     </div>
     <div class="item even">
         <div class="top">
-            <img src="/static/img/f3.jpg"/>
-            <div class="triangle"></div>
+            <img src="/static/img/projects/grid-tiles/f3.jpg"/>
         </div>
         <h2>Title Three<br>The Larger Title</h2>
         <p class="middle">Mauris pellentesque mollis nibh non porta. Aliquam et orci lectus.</p>
@@ -46,8 +46,7 @@
     </div>
     <div class="item odd">
         <div class="top">
-            <img src="/static/img/f4.jpg"/>
-            <div class="triangle"></div>
+            <img src="/static/img/projects/grid-tiles/f4.jpg"/>
         </div>
         <h2>Title Four</h2>
         <p class="middle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>

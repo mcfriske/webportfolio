@@ -8,9 +8,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Mikhaila C Friske</title>
+        <title>{%if title %}{{title}} | {%endif%}Mikhaila C Friske</title>
 
-        <link href="{% static 'scss/home/nav.css' %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +25,6 @@
         <!-- Navigation -->
         <header>
         {% block nav %}
-            {% include 'includes/nav.html' %}
         {% endblock %}
         </header>
         <!-- Header -->
@@ -34,16 +33,15 @@
         {% endblock %}
         </div>
         <!-- Main Content -->
-        <div>
+        <div class="container">
         {% block content %}
         {% endblock %}
         </div>
         <!-- Footer -->
-       <!--  <footer>
+        <footer>
         {% block footer %}
-            {% include 'includes/footer.html' %}
         {% endblock %}
-        </footer> -->
+        </footer>
 
         <!-- JavaScript -->
         {% block js %}
