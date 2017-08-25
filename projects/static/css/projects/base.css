@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: rockwell, serif;
+    text-transform: uppercase;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em 0;
+}
