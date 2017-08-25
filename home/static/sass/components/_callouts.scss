@@ -1,0 +1,70 @@
+.callout {
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding: 1.3rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+  border-radius: 0;
+  background-color: white;
+  color: $black;
+  width: 100%;
+
+  &.bordered {
+    border-left-width: 0.3125rem;
+    border-left-color: #cacaca;
+  }
+}
+
+.callout-default {
+	background: #eaeaea;
+	strong {
+		color: #767676;
+	}
+
+	&.bordered {
+		border-left-color: #767676;
+	}
+}
+
+.callout-primary {
+	background: $blue-light;
+	strong {
+		color: $blue;
+	}
+
+	&.bordered {
+		border-left-color: $blue;
+	}
+}
+
+.callout-success {
+	background: $green-light;
+	strong {
+		color: $green;
+	}
+
+	&.bordered {
+		border-left-color: $green;
+	}
+}
+
+.callout-danger {
+	background: $red-light;
+	strong {
+		color: $red;
+	}
+
+	&.bordered {
+		border-left-color: $red;
+	}
+}
+
+.callout-warning {
+	background: $yellow-light;
+	strong {
+		color: $yellow;
+	}
+
+	&.bordered {
+		border-left-color: $yellow;
+	}
+}

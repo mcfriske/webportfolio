@@ -4,6 +4,9 @@
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
 <link href="{% static 'css/projects/home.min.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
+{% block nav %}
+    {% include 'includes/nav.html' %}
+{% endblock %}
 {% block header %}
 <div class="hero">
     <div class="hero-text">
@@ -14,14 +17,32 @@
 {% block content %}
 <div class="container-fluid gw">
   <div class="card-user-profile g one-whole tablet-one-half desk-one-third">
-    <img class="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+    <img class="card-user-profile-img" src="/static/img/projects/grid-tiles-img.png" alt="picture of space" />
     <div class="card-user-profile-content card-section">
-        <div class="card-user-profile-avatar">
-            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+        <div class="card-user-profile-avatar avatar-layout">
+            <img  class="avatar-icon" src="/static/img/icons/001-browser.svg" alt="Layout"/>
         </div>
-        <p class="card-user-profile-name">Abominable Snowman</p>
-        <p class="card-user-profile-status">Yeti Web Designer</p>
-        <p class="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+        <p class="card-user-profile-name">Post Portal Layout</p>
+        <p class="card-user-profile-status">Two Column | Grid</p>
+        <p class="card-user-profile-info">This layout features portals containing an image, title, description and button laid out in two columns. This layout is great for a blog or a small website.</p>
+        <div class="card-user-profile-actions">
+            <button class="btn btn-primary hollow"><a href="/projects/grid-tiles/">View Example</a></button>
+            <button class="btn btn-default hollow"><a href="https://github.com/mcfriske/webportfolio" target="_blank">Source Code</a></button>
+        </div>
+    </div>
+  </div>
+  <div class="card-user-profile g one-whole tablet-one-half desk-one-third">
+    <img class="card-user-profile-img" src="/static/img/projects/course-search-img.png" alt="picture of space" />
+    <div class="card-user-profile-content card-section">
+        <div class="card-user-profile-avatar avatar-web-app">
+            <img  class="avatar-icon" src="/static/img/icons/001-coding-1.svg" alt="Layout"/>
+        </div>
+        <p class="card-user-profile-name">UMN Course Search</p>
+        <p class="card-user-profile-status">Web App | Flask</p>
+        <p class="card-user-profile-info">This is an old web application I created to search for courses. It is the first project I did on my own and was created due to difficulties when trying to find courses.</p>
+        <div class="card-user-profile-actions">
+            <button class="btn btn-default hollow"><a href="https://github.com/mcfriske/flask-app-umn-courses" target="_blank">Source Code</a></button>
+        </div>
     </div>
   </div>
 </div>

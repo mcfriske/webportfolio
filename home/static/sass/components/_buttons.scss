@@ -1,0 +1,155 @@
+.btn {
+	padding: .5rem .7rem;
+	font-size: $base-font-size;
+	border: 0;
+	outline: 0;
+	box-shadow: inset 0 -1.2px 0 rgba(0,0,0,.2);
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.btn-default {
+	background: #eaeaea;
+
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+
+	&.hollow {
+		color: #7c7c7c;
+		background: transparent;
+		border: #7c7c7c solid 1px;
+
+		a {
+			color: #7c7c7c;
+		}
+	}
+
+	&:active, &:focus, &:hover {
+		background: #7c7c7c;
+
+		&.hollow {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn-primary {
+	background: $blue;
+	color: $white;
+
+	&.hollow {
+		color: $blue;
+		background: transparent;
+		border: $blue solid 1px;
+
+		a {
+			color: $blue;
+		}
+	}
+
+	&:active, &:focus, &:hover {
+		background: $blue-dark;
+		outline: none;
+
+		&.hollow {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn-success {
+	background: $green;
+	color: $white;
+
+	&.hollow {
+		color: $green;
+		background: transparent;
+		border: $green solid 1px;
+
+		a {
+			color: $green;
+		}
+	}
+
+	&:active, &:focus, &:hover {
+		background: $green-dark;
+		outline: none;
+
+		&.hollow {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn-danger {
+	background: $red;
+	color: $white;
+
+	&.hollow {
+		color: $red;
+		background: transparent;
+		border: $red solid 1px;
+
+		a {
+			color: $red;
+		}
+	}
+
+	&:active, &:focus, &:hover {
+		background: $red-dark;
+		outline: none;
+
+		&.hollow {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn-warning {
+	background: $yellow;
+	color: $white;
+
+	&.hollow {
+		color: $yellow;
+		background: transparent;
+		border: $yellow solid 1px;
+
+		a {
+			color: $yellow;
+		}
+	}
+
+	&:active, &:focus, &:hover {
+		background: $yellow-dark;
+		outline: none;
+		
+		&.hollow {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}

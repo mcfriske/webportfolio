@@ -8,10 +8,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Mikhaila C Friske</title>
+        <title>{%if title %}{{title}} | {%endif%}Mikhaila C Friske</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +25,6 @@
         <!-- Navigation -->
         <header>
         {% block nav %}
-            {% include 'includes/nav.html' %}
         {% endblock %}
         </header>
         <!-- Header -->
@@ -41,11 +38,10 @@
         {% endblock %}
         </div>
         <!-- Footer -->
-       <!--  <footer>
+        <footer>
         {% block footer %}
-            {% include 'includes/footer.html' %}
         {% endblock %}
-        </footer> -->
+        </footer>
 
         <!-- JavaScript -->
         {% block js %}

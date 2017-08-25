@@ -1,6 +1,6 @@
 from django_assets import Bundle, register
 
-main_css = Bundle('sass/_base.scss',
+main_css = Bundle('sass/_base.scss', depends="sass/**/*.scss",
             filters='scss, cssmin', output='css/main.min.css')
 
 home_css = Bundle('sass/trumps/home.scss',

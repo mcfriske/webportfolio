@@ -4,6 +4,9 @@
 {{ super }}
 <link rel="stylesheet" href="{% static 'css/projects/grid.min.css' %}">
 {% endblock %}
+{% block nav %}
+    {% include 'includes/nav-light.html' %}
+{% endblock %}
 {% block content %}
 <div class="content">
 <div class="grid">
