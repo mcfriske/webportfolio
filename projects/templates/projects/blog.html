@@ -1,0 +1,28 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block head %}
+{{ super }}
+<link rel="stylesheet" href="{% static 'css/projects/blog.min.css' %}">
+{% endblock %}
+{% block nav %}
+    {% include 'includes/nav-light.html' %}
+{% endblock %}
+{% block content %}
+<div class="container-fluid blog-grid gw gw--full">
+    <div class="hero g one-whole tablet-one-half">
+        <div class="hero-border">
+            <div class="hero-text">Creative Blog Title</div>
+        </div>
+    </div>
+    <div class="content blog g one-whole tablet-one-half gw gw--full">
+        <div class="blog-title g one-whole desk-two-thirds">
+            <h1>Creative Blog Title</h1>
+            <span>This is a small headline to go under the title.</span>
+        </div>
+        <div class="blog-content g one-whole tablet-five-sixths desk-three-quarters">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum quam in tellus dignissim, sit amet tempus sapien elementum. Ut luctus id est sed vehicula. Nullam malesuada faucibus sapien, eget fermentum erat accumsan posuere. Nullam venenatis tempor posuere. Vivamus non felis nec nulla tempus blandit. Vestibulum ultrices eros nec nunc sagittis ultrices. Praesent at feugiat quam. Fusce elementum consectetur lorem a ultricies.</p>
+            <p>Vestibulum vel nulla mattis, faucibus urna quis, molestie dui. Nulla dui lorem, finibus et consequat vel, tempor eget justo. Donec porta metus eu erat efficitur, vel viverra justo aliquam. Proin nec augue id lorem varius pharetra sit amet vitae nibh. Aenean vitae purus orci. In condimentum nibh vestibulum dui ullamcorper, porttitor egestas dui mattis. Suspendisse dignissim nulla elit, at ultricies urna tincidunt quis.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

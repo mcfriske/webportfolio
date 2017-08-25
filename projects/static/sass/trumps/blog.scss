@@ -1,0 +1,106 @@
+@import '../tools/functions';
+@import '../settings/global';
+@import '../settings/colors';
+@import '../tools/mixins';
+
+body {
+    background: #f7f7f7;
+
+    p {
+        line-height: 1.6rem;
+    }
+}
+
+.container {
+    padding: 0 !important;
+}
+
+.nav {
+    position: absolute !important;
+}
+
+.hero {
+    height: 100vh;
+    background: url('/static/img/projects/blog-layouts/book-roses.jpg') 50% no-repeat;
+    background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-border {
+    height: 80%;
+    width: 80%;
+    border: #f7f7f7 solid 1.6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .hero-text {
+        display: none;
+        color: #f7f7f7;
+        font-size: 3rem;
+        font-weight: bold;
+        margin: auto;
+
+        @include media($upto: tablet) {
+            display: inline;
+        }
+      }
+  }
+}
+
+.blog.gw {
+    align-items: end;
+}
+
+.blog-title {
+    grid-column-end: end;
+    text-align: center;
+    padding-right: 2rem;
+
+    @include media($from: tablet) {
+        text-align: right;
+    }
+
+    @include media($upto: tablet) {
+        margin-top: 2rem;
+        opacity: .7;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        font-weight: bold;
+
+        @include media($upto: tablet) {
+            display: none;
+        }
+
+        @include media($from: wall) {
+            font-size: 4rem;
+        }
+    }
+    span {
+        font-size: 1.2rem;
+        opacity: .75;
+    }
+}
+
+.blog-content {
+    text-align: justify;
+    grid-row: span 2;
+    margin-top: 2rem;
+
+    @include media($from: tablet) {
+        margin: 0 2rem;
+    }
+
+    p:first-of-type:first-letter {
+        font-size: 50px;
+        font-weight: bold;
+    margin: -5px 10px -10px 0;
+    line-height: 50px;
+    float: left;
+    }
+}

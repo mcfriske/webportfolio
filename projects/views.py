@@ -8,4 +8,6 @@ def index(request):
 def grid(request):
     return render(request, 'projects/grid.html', {'title': 'Grid Tiles', 'project': 'Grid Tiles'})
 
+def blog(request):
 
+    return render(request, "projects/blog.html", {'title': 'Blog', 'project': True})
