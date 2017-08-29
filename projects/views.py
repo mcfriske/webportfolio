@@ -22,7 +22,7 @@ def calendar(request):
     service = get_service()
     now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
     eventsResult = service.events().list(
-        calendarId='primary', timeMin=now, maxResults=8, singleEvents=True,
+        calendarId='primary', timeMin=now, maxResults=10, singleEvents=True,
         orderBy='startTime').execute()
     gcal = eventsResult.get('items', [])
 
