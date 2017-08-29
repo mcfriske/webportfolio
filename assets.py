@@ -12,8 +12,12 @@ grid_css = Bundle('sass/trumps/grid.scss',
 blog_css = Bundle('sass/trumps/blog.scss',
              filters='scss, cssmin', output='css/projects/blog.min.css')
 
+calendar_css = Bundle('sass/trumps/calendar.scss',
+             filters='scss, cssmin', output='css/projects/calendar.min.css')
+
 
 register('main_css', main_css)
 register('grid_css', grid_css)
 register('home_css', home_css)
 register('blog_css', blog_css)
+register('calendar_css', calendar_css)

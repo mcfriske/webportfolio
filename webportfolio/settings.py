@@ -132,3 +132,5 @@ STATICFILES_FINDERS = (
 ASSETS_MODULES = [
     'assets'
 ]
+
+GOOGLE_OAUTH2_CLIENT_SECRETS_JSON = 'client_secrets.json'

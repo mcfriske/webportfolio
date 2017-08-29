@@ -1,0 +1,143 @@
+.nav {
+    position: relative;
+}
+
+.event-tiles-container {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.event-tile {
+    padding: 1.6rem !important;
+    color: #f7f7f7;
+    background: #EDAB5C;
+    flex: 2 1 250px;
+
+    .event-title {
+        text-transform: uppercase;
+        padding: .7rem 0;
+        clear: both;
+    }
+
+    .event-start, .event-end {
+        text-transform: uppercase;
+        float: left;
+    }
+
+    .event-start-date {
+        font-size: 1.4rem;
+        margin-bottom: -5px;
+    }
+
+    .event-end-date {
+        font-size: .9rem;
+        margin-bottom: -2px;
+    }
+
+    .event-start-month, .event-end-month {
+        text-align: right;
+    }
+
+    .event-end {
+        opacity: .9;
+        font-size: 65%;
+        padding-left: 5px;
+    }
+
+    .event-time, .event-location {
+        font-size: 80%;
+    }
+}
+
+.event-tile.alternate-1 {
+    background-color: #F76383;
+}
+
+.event-tile.alternate-2 {
+    background-color: #835DE0;
+}
+
+.event-tile.alternate-3 {
+    background-color: #2997B0;
+}
+
+.event-tile.alternate-4 {
+    background-color: #60C94E;
+}
+
+.event-cards-container {
+    border-radius: 5px;
+    overflow: hidden;
+
+    .event-card {
+        color: #5d5d5d;
+        border: solid 1px #ddd;
+        border-left-color: #EDAB5C;
+        border-left-width: 5px;
+        border-bottom: 0;
+        padding: .7rem;
+        display: grid;
+        grid-template-columns: 5.5rem auto;
+
+        .event-title {
+            color: #444;
+            text-transform: uppercase;
+            clear: both;
+        }        
+
+        .event-start, .event-end {
+            text-transform: uppercase;
+        }
+
+        .event-start, .event-end {
+            color: #8c8c8c;
+            float: left;
+        }
+
+        .event-start-date {
+            font-size: 1.4rem;
+            margin-bottom: -5px;
+        }
+
+        .event-end-date {
+            font-size: .9rem;
+            margin-bottom: -2px;
+        }
+
+        .event-start-month, .event-end-month {
+            text-align: right;
+        }
+
+        .event-end {
+            opacity: .9;
+            font-size: 65%;
+            padding-left: 5px;
+        }
+
+        .event-time, .event-location {
+            font-size: 80%;
+        }
+    }
+
+    .event-card:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.event-card.alternate-1 {
+    border-left-color: #F76383;
+}
+
+.event-card.alternate-2 {
+    border-left-color: #835DE0;
+}
+
+.event-card.alternate-3 {
+    border-left-color: #2997B0;
+}
+
+.event-card.alternate-4 {
+    border-left-color: #60C94E;
+}
